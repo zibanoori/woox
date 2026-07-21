@@ -37,7 +37,26 @@ pip install django
 ```bash
 python manage.py runserver
 ```
+
 # ادامه کار در محیط ادیتور
+Log in to VS Code and continue working there.
 ```bash
 code .
+```
+### اجرای سرور
+
+فعال‌سازی محیط مجازی
+```bash
+source ../venv/Scripts/activate
+
+راه‌اندازی سرور توسعه‌ی جنگو:
+python manage.py runserver
+
+ساخت اولین اپ در پروژه
+ls
+python manage.py startapp main
+settings.py
+add new app in settings.py
+add new sqlite in settings.py
+add urls.py in new app main
 ```
