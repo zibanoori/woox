@@ -20,3 +20,9 @@ cd WOOX/woox
 برای ایجاد یک محیط ایزوله جهت نصب پکیج‌ها:
 ```bash
 python -m venv venv
+```
+### ۳. فعال‌سازی محیط مجازی
+برای ورود به محیط مجازی ساخته شده:
+```bash
+source venv/Scripts/activate
+```
