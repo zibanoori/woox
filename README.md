@@ -26,3 +26,8 @@ python -m venv venv
 ```bash
 source venv/Scripts/activate
 ```
+### ۴. نصب پیش‌نیازها
+نصب فریم‌ورک جنگو و وابستگی‌های آن:
+```bash
+pip install django
+```
