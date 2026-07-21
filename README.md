@@ -31,3 +31,9 @@ source venv/Scripts/activate
 ```bash
 pip install django
 ```
+### ۵. اجرای سرور
+راه‌اندازی سرور توسعه‌ی جنگو:
+
+```bash
+python manage.py runserver
+```
