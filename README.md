@@ -37,3 +37,7 @@ pip install django
 ```bash
 python manage.py runserver
 ```
+# ادامه کار در محیط ادیتور
+```bash
+code .
+```
