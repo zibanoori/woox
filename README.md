@@ -61,4 +61,31 @@ add new sqlite in settings.py
 add urls.py in new app main
 ```
 ---
+### urls.py project
+```
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include("main.urls")),
+]
+```
+### urls.py app project(main)
+```
+from django.urls import path
+from .views import index
+
+urlpatterns = [
+    path('',index,name="home"),
+]
+```
+### views.py project
+```from django.shortcuts import render
+from django.http import HttpResponse
+
+def index(request):
+    return HttpResponse("<h1>Hallo World Woox</h1>")
+```
+
 
