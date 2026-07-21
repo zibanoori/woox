@@ -60,3 +60,5 @@ add new app in settings.py
 add new sqlite in settings.py
 add urls.py in new app main
 ```
+---
+
