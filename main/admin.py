@@ -9,8 +9,11 @@ class MoDeleteAdminMixin:
 class MyModelAdmin(admin.ModelAdmin, MoDeleteAdminMixin):
     def has_add_permission(self, request):
         return not MyModel.objects.exists()
-
-
+class CoreAdmin(admin.ModelAdmin):
+    list_display = ['title', 'website_title', 'logo', 'copyright']
+    list_display_links = ['title']     
+    list_editable = ['website_title']  
+    
 admin.site.register(Core)
 
 
