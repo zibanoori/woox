@@ -5,15 +5,12 @@ class MoDeleteAdminMixin:
     def has_delete_permission(self, request, obj=None):
         return False
 
-@admin.register(MyModel)
-class MyModelAdmin(admin.ModelAdmin, MoDeleteAdminMixin):
-    def has_add_permission(self, request):
-        return not MyModel.objects.exists()
-class CoreAdmin(admin.ModelAdmin):
+@admin.register(Core)
+class CoreAdmin(MoDeleteAdminMixin, admin.ModelAdmin):
     list_display = ['title', 'website_title', 'logo', 'copyright']
-    list_display_links = ['title']     
-    list_editable = ['website_title']  
+    list_display_links = ['title']
+    list_editable = ['website_title']
+
+    def has_add_permission(self, request):
     
-admin.site.register(Core)
-
-
+        return not Core.objects.exists()
