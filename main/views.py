@@ -7,4 +7,4 @@ def index(request):
     context = {
         "core": base_details
     }
-    return render(request,"index.html")
+    return render(request,"index.html",context)
