@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import core
+from .models import Core
 
-admin.site.register(core)
+admin.site.register(Core)
 
 
